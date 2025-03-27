@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    background-image: url('/img/woods-img.jpg');
+    background-size: cover;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    padding: 1.6rem;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+li{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    cursor: pointer;
+    color: rgba(255, 68, 0, 0.781); 
+    transition: color 0.3s ease;
+}
+
+#actual-page{
+    color: orangered; 
+}
+
+h1{
+    font-weight: 700;
+    color: white;
+    font-size: 3rem;
+    margin: 2rem;
+    text-transform: uppercase;
+}
+
+.user-img{
+    width: 10rem;
+    margin: auto;
+    margin-bottom: 1rem;
+    border-radius: 100%;
+
+}
+
+.more-info{
+    display: none;
+}
+
+.btn-close{
+    display: none;
+}
+
+button{
+    padding: 0.5rem;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border-radius: 10px;
+    background-color: rgb(231, 225, 225);
+    font-weight: 600;
+}
+
+button:hover{
+    background-color: rgba(255, 255, 255, 0.507);
+    cursor: pointer;
+}
+
+.user-cards{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+    gap: 2rem;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.user-card{
+    width: 22rem;
+    min-height: 25rem;   
+    padding: 2rem; 
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.563);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(12, 12, 12, 0.521);
+    backdrop-filter: blur(12px);
+    transition: transform 0.3s ease;
+}
+
+.user-card h3, h4, p{
+    margin: 0.2rem;
+}
+
+.user-card:hover{
+    transform: scale(1.03);
+}
+
+.more-info p{
+    font-weight: 600;
+}
+
+footer{
+    background-color: rgb(255, 255, 255);
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p{
+    font-weight: 600;
+}
+
+
+
