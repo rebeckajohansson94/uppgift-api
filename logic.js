@@ -15,11 +15,11 @@ function getUsers(){
 
         users.forEach(user => {
             let userContent = `
-                <div class="user-card" data-id="${user.id}">
+                <div class="user-card">
                 <img class="user-img" src="../img/user-img.jpeg" alt="picture of user-icon"/>
-                <h3>Name: ${user.name}</h3>
-                <h4>Username: ${user.username}</h4>
-                <p><strong>Email: ${user.email}</strong></p>  
+                <h3>${user.name}</h3>
+                <p><strong>Username:</strong> ${user.username}</p>
+                <p><strong>Email:</strong> ${user.email}</p>  
                 <button class="btn-show">Show more info</button>        
                 
                 <div class="more-info">
@@ -27,8 +27,6 @@ function getUsers(){
                 <p><strong>Phone:</strong> ${user.phone}</p>
                 <p><strong>Company:</strong> ${user.company.name}</p>
                 <button class="btn-close">Close</button>  
-                
-
                 </div>
                 </div>
                 `;
