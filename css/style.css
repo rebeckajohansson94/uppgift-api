@@ -6,7 +6,7 @@
 
 body{
     font-family: "Montserrat", sans-serif;
-    background-image: url('/img/woods-img.jpg');
+    background-image: url('/img/mountains-img.webp');
     background-size: cover;
     text-align: center;
     background-attachment: fixed;
@@ -14,14 +14,18 @@ body{
 
 header{
     background-color: rgb(255, 255, 255);
-    padding: 1.6rem;
+    padding: 1.3rem;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 10;
+    opacity: 0.9;
 }
 
 ul{
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
-    list-style-type: none;
+    list-style-type: none; 
 }
 
 li{
@@ -33,16 +37,16 @@ li{
 a{
     text-decoration: none;
     color: black;
+    transition: color 0.3s ease;
 }
 
 a:hover{
     cursor: pointer;
-    color: rgba(255, 68, 0, 0.781); 
-    transition: color 0.3s ease;
+    color: rgba(139, 0, 139, 0.733); 
 }
 
 #actual-page{
-    color: orangered; 
+    color: darkmagenta; 
 }
 
 h1{
@@ -50,7 +54,9 @@ h1{
     color: white;
     font-size: 3rem;
     margin: 2rem;
+    padding-top: 4rem;
     text-transform: uppercase;
+    text-shadow: 2px 2px #8e8c8c;
 }
 
 .user-img{
@@ -74,22 +80,24 @@ button{
     margin: 0 auto;
     margin-top: 1rem;
     border-radius: 10px;
-    background-color: rgb(231, 225, 225);
-    font-weight: 600;
+    background: linear-gradient(135deg, #CCB1F9, #804EBA);
+    font-weight: 700;
+    border: none;
+    height: 3rem;
+    transition: transform 0.2s ease;
 }
 
 button:hover{
-    background-color: rgba(255, 255, 255, 0.507);
     cursor: pointer;
+    transform: scale(1.03);
 }
 
-.user-cards{
+.usercards-container{
     display: flex;
     flex-wrap: wrap;
     max-width: 100%;
     margin: 0 auto;
     gap: 2rem;
-    max-width: 100%;
     justify-content: center;
     align-items: center;
     padding: 0 1.5rem 0 1.5rem;
@@ -104,9 +112,9 @@ button:hover{
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.563);
     border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(12, 12, 12, 0.521);
+    box-shadow: 0 3px 10px rgba(144, 136, 136, 0.192);
     backdrop-filter: blur(12px);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .user-card h3, p{
@@ -118,19 +126,13 @@ button:hover{
 }
 
 .user-card:hover{
-    transform: scale(1.03);
+    box-shadow: 0 5px 10px rgba(12, 12, 12, 0.521);
 }
-
 
 footer{
     background-color: rgb(255, 255, 255);
-    padding: 1.5rem;
-    margin-top: 2rem;
-}
-
-footer p{
+    padding: 1.4rem;
+    margin-top: 4rem;
+    opacity: 0.9;
     font-weight: 600;
 }
-
-
-
