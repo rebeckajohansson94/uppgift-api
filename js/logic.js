@@ -14,7 +14,7 @@ async function getUsers(){
         dataResponse.forEach(user => {
             let userContent = `
                 <div class="user-card">
-                    <img class="user-img" src="../img/user-img.jpeg" alt="picture of user-icon"/>
+                    <img class="user-img" src="img/user-img.jpeg" alt="picture of user-icon"/>
                     <h3>${user.name}</h3>
                     <p><strong>Username:</strong> ${user.username}</p>
                     <p><strong>Email:</strong> ${user.email}</p>  
